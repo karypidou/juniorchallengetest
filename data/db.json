@@ -1,39 +1,46 @@
 {
   "products": [
     {
-      "id": 1, //number
-      "name" : "name1",
-      "description": "description",
-      "image": "image",
-      "price": "price"
+      "id": 1,
+      "name" : "Sebi",
+      "description": "Diese Katze heißt Sebi",
+      "image": "/images/Katze1.jpeg",
+      "price": "50 Euro"
     },
     {
-      "id": 2, //number
-      "name" : "name2",
-      "description": "description",
-      "image": "image",
-      "price": "price"
+      "id": 2,
+      "name" : "Max",
+      "description": "Diese Katze heißt Max",
+      "image": "/images/Katze2.jpeg",
+      "price": "30 Euro"
     },
     {
-      "id": 3, //number
-      "name" : "name3",
-      "description": "description",
-      "image": "image",
-      "price": "price"
+      "id": 3,
+      "name" : "Oksana",
+      "description": "Diese Katze heißt Oksana",
+      "image": "/images/Katze3.jpeg",
+      "price": "60 Euro"
     },
     {
-      "id": 4, //number
-      "name" : "name4",
-      "description": "description",
-      "image": "image",
-      "price": "price"
+      "id": 4,
+      "name" : "Anthony",
+      "description": "Diese Katze heißt Anthony",
+      "image": "/images/Katze4.jpeg",
+      "price": "20 Euro"
     },
     {
-      "id": 5, //number
-      "name" : "name5",
-      "description": "description",
-      "image": "image",
-      "price": "price"
+      "id": 5,
+      "name" : "Andi",
+      "description": "Diese Katze heißt Andi",
+      "image": "/images/Katze5.jpeg",
+      "price": "10 Euro"
+    },
+    {
+      "id": 6,
+      "name" : "Dani",
+      "description": "Diese Katze heißt Dani",
+      "image": "/images/Katze6.jpeg",
+      "price": "100 Euro"
     }
   ]
 }
