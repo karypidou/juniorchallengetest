@@ -3,6 +3,7 @@ import * as React from 'react';
 import {ProductList} from "../product-list/ProductList";
 import {Product, ProductRaw} from "../utils/utils";
 import {ProductDetails} from "../product-details/ProductDetails";
+import './ProductPage.css';
 
 
 interface State {
@@ -29,11 +30,13 @@ export class ProductPage extends React.Component<any,State> {
 
     public render () {
         return (
-            <div>
-                <label>
+            <div className="wrapper-product-page">
+                <label className='filter'>
                     Filter:
-                    <input type="text" name="name" onChange={this.filterProducts}/>
+                    <input className='input-field' type="text" name="name" onChange={this.filterProducts}/>
+
                 </label>
+
                 <ProductList products={this.state.filteredProducts} showProduct={this.showProduct} hideProduct={this.hideProduct}/>
                 {!!this.state.currentProduct ? (<ProductDetails product={this.state.currentProduct}/>) : null}
             </div>
