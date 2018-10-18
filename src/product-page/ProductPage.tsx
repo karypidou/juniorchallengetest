@@ -2,30 +2,32 @@ import fetch from 'node-fetch';
 import * as React from 'react';
 import {ProductList} from "../product-list/ProductList";
 import {Product, ProductRaw} from "../utils/utils";
-import {ProductDetails} from "../product-details/ProductDetails";
 import './ProductPage.css';
 
 
 interface State {
     products: Product[],
     filteredProducts: Product[],
-    currentProduct?: Product
+    url: string
 }
 
 
 
 export class ProductPage extends React.Component<any,State> {
 
-    constructor(props:any) {
-        super(props);
-        this.getDataFromServer();
-        this.state = {
-            products: [],
-            filteredProducts: [],
-        };
-        this.filterProducts = this.filterProducts.bind(this);
-        this.showProduct = this.showProduct.bind(this);
-        this.hideProduct = this.hideProduct.bind(this);
+    public state = {
+        products: [],
+        filteredProducts: [],
+        url: '/products'
+    };
+
+    public componentDidMount() {
+        this.setState({url: this.props.match.url})
+        this.getDataFromServer(this.props.match.url);
+    }
+
+    public componentDidUpdate(props:any){
+        console.log(props.match.url === this.state.url);
     }
 
     public render () {
@@ -37,24 +39,21 @@ export class ProductPage extends React.Component<any,State> {
 
                 </label>
 
-                <ProductList products={this.state.filteredProducts} showProduct={this.showProduct} hideProduct={this.hideProduct}/>
-                {!!this.state.currentProduct ? (<ProductDetails product={this.state.currentProduct}/>) : null}
+                <ProductList products={this.state.filteredProducts} url={this.state.url}/>
             </div>
         );
     }
 
-    private filterProducts(e : React.FormEvent<HTMLInputElement>) {
+    private filterProducts = (e : React.FormEvent<HTMLInputElement>) => {
         const filterString = e.currentTarget.value;
-        const newProducts = this.state.products.filter((product) => {
-
+        const newProducts = this.state.products.filter((product : Product) => {
             return product.name.toLowerCase().includes(filterString.toLowerCase());
-
         });
         this.setState({filteredProducts: newProducts})
     }
 
-    private async getDataFromServer() {
-        const res = await fetch("http://localhost:4000/products");
+    private async getDataFromServer(dataUrl:string) {
+        const res = await fetch(`http://localhost:4000${dataUrl}`);
         const json = await res.json();
         const products:Product[] = [];
         json.map((product: ProductRaw) => {
@@ -67,19 +66,5 @@ export class ProductPage extends React.Component<any,State> {
             })
         });
         this.setState({products, filteredProducts: products});
-    }
-
-    private showProduct(index:number) {
-        const currentProduct = this.state.filteredProducts.find((product) => product.number === index);
-        this.setState({
-            currentProduct
-        });
-    }
-
-    private hideProduct(index:number) {
-        const currentProduct = this.state.filteredProducts.find((product) => product.number === index);
-        if (!!this.state.currentProduct && !!currentProduct && this.state.currentProduct.number === currentProduct.number) {
-            this.setState({currentProduct: undefined})
-        }
     }
 }

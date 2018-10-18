@@ -1,6 +1,6 @@
 .product-list-item {
     float:left;
-    width: 300px;
+    width: 600px;
     height: 300px;
     margin: 20px;
 }
@@ -10,15 +10,30 @@
     height:200px;
 }
 
-.product-name, .product-price {
-    font-size: 30px;
-    float: left;
+.product-details {
+    float: right;
+    width: 200px;
+    height: 200px;
+    text-align: center;
 }
+
+.product-name, .product-price {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
 
 .product-price {
-    float: right;
+    font-size: 50px;
 }
 
-.product-list-item:hover {
-    background: grey;
+
+.to-product-btn {
+    margin-top: 20px!important;
+    background-color: #1769aa!important;
+    width: 200px!important;
+
 }

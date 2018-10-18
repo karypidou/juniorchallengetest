@@ -8,19 +8,41 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #2196f3 ;
+  height: 100px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
   font-size: 1.5em;
+  margin-top: 30px;
 }
 
 .App-intro {
   font-size: large;
 }
+
+
+li > button {
+  width: 100%!important;
+}
+
+.side-bar-button {
+  float: left;
+  margin-top: 30px;
+  position: relative;
+  color: white;
+  font-size: 40px!important;
+  
+}
+.side-bar-button:hover {
+  color: darkgrey;
+}
+.side-bar-button:active {
+  color: grey;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

@@ -1,44 +1,88 @@
 {
   "products": [
     {
+      "id": 2396073,
+      "name" : "SAMSUNG UE55NU7179UXZG LED TV (Flat, 55 Zoll, UHD 4K, SMART TV, Tizen)",
+      "description": "Genießen Sie präzise, klare Bilder mit 4K UHD TV und 4x mehr Pixeln als Full HD. Jetzt können Sie selbst die kleinsten Details in jeder Szene sehen.",
+      "image": "/images/Fernseher1.png",
+      "price": "599 Euro"
+    },
+    {
+      "id": 2408469,
+      "name" : "SAMSUNG GQ65Q6FNGT QLED TV (Flat, 65 Zoll, UHD 4K, SMART TV, Tizen)",
+      "description": "Dank Q Color genießen Sie eine beeindruckende Farbintensität. Denn QLED TVs bieten in Kombination mit 10-Bit-Panels ein 100%iges Farbvolumen und eine nahezu vollständige Abdeckung des DCI-P3-Farbraums.",
+      "image": "/images/Fernseher2.png",
+      "price": "1699 Euro"
+    },
+    {
+      "id": 2396076,
+      "name" : "SAMSUNG UE40NU7199UXZG LED TV (Flat, 40 Zoll, UHD 4K, SMART TV, Tizen)",
+      "description": "Genießen Sie präzise, klare Bilder mit 4K UHD TV und 4x mehr Pixeln als Full HD. Jetzt können Sie selbst die kleinsten Details in jeder Szene sehen.",
+      "image": "/images/Fernseher3.png",
+      "price": "429 Euro"
+    },
+    {
+      "id": 2338311,
+      "name" : "PANASONIC TX-55EXW584 LED TV (Flat, 55 Zoll, UHD 4K, SMART TV, My Home Screen 2.0)",
+      "description": "Der perfekte Einstieg – Genießen Sie Ihre Lieblingsfilme ab sofort in Ultra HD - Auflösung. Die EXW584-Serie bietet Ihnen gestochen scharfe Szenen und hohe Kontraste, dank Adaptive Backlight Scanning. ",
+      "image": "/images/Fernseher4.png",
+      "price": "669 Euro"
+    },
+    {
+      "id": 2407814,
+      "name" : "LG 65UK6100PLB UHD TV (Flat, 65 Zoll, UHD 4K, SMART TV, webOS 3.5)",
+      "description": "Der Fußball-Modus wurde entwickelt, um Ihnen ein optimales Fernseherlebnis beim Fußball zu bieten und sorgt für eine verbesserte Bild- und Klangqualität. Damit können Sie die Spannung im Stadium regelrecht fühlen – mit flüssigeren Bewegungen, lebendigeren Farben und der ganzen Action und Geräuschkulisse, als wären Sie mittendrin.",
+      "image": "/images/Fernseher5.png",
+      "price": "1119 Euro"
+    },
+    {
+      "id": 2444739,
+      "name" : "LG 55SK8000PLB LED TV (Flat, 55 Zoll, UHD 4K, SMART TV, webOS)",
+      "description": "Der LG SUPER UHD TV 55SK8000 schafft eine bemerkenswerte Verbindung zwischen Performance und Design. Der ultraschmale Rahmen wird von zwei dezenten silbernen Füßen getragen, was zusammen ein elegantes Gesamtbild ergibt.",
+      "image": "/images/Fernseher6.png",
+      "price": "799 Euro"
+    }
+  ],
+  "cats": [
+    {
       "id": 1,
       "name" : "Sebi",
-      "description": "Diese Katze heißt Sebi",
+      "description": "Diese Katze heißt Sebi. Sie lebt in ihrer eigenen Welt und verliert sich oft in wirren Gedanken. Zwei Sachen gleichzeitig kann er nicht, weshalb er auch keine Katze ist, sondern ein Kater.",
       "image": "/images/Katze1.jpeg",
       "price": "50 Euro"
     },
     {
       "id": 2,
       "name" : "Max",
-      "description": "Diese Katze heißt Max",
+      "description": "Dieser Kater heißt Max. Er hat Schwierigkeiten mit essen, weshalb er sehr sehr dünn ist. Man erkennt ihn an seinen bunten Füßen.",
       "image": "/images/Katze2.jpeg",
       "price": "30 Euro"
     },
     {
       "id": 3,
       "name" : "Oksana",
-      "description": "Diese Katze heißt Oksana",
+      "description": "Diese Katze heißt Oksana. Sie fällt durch ihr helles Fell und ihrem hübschen Gesicht auf. Sie ist immer sehr fröhlich und diszipliniert.",
       "image": "/images/Katze3.jpeg",
       "price": "160 Euro"
     },
     {
       "id": 4,
       "name" : "Anthony",
-      "description": "Diese Katze heißt Anthony",
+      "description": "Dieser Kater heißt Anthony. Er hat eine lange Reise hinter sich, weil er aus einem wilden Gebiet hierhergereist ist, was auch seine ständige Müdigkeit erklärt.",
       "image": "/images/Katze4.jpeg",
       "price": "20 Euro"
     },
     {
       "id": 5,
       "name" : "Andi",
-      "description": "Diese Katze heißt Andi",
+      "description": "Dieser Kater heißt Andi. Er hat immer sehr viel zu tun und man kriegt ihn kaum zu sehen. Ein vielbeschäftigter Kater eben. Aber wenn es drauf ankommt, hilft er bei Problemen trotz Stress gern.",
       "image": "/images/Katze5.jpeg",
-      "price": "10 Euro"
+      "price": "45 Euro"
     },
     {
       "id": 6,
       "name" : "Dani",
-      "description": "Diese Katze heißt Dani",
+      "description": "Dieser Kater heißt Dani. Dani ist das jüngste Objekt, was hier angeboten wird. Aber trotz seines jungen Alters, darf man ihn nicht unterschätzen. Er ist so eine Art Geheimtipp.",
       "image": "/images/Katze6.jpeg",
       "price": "100 Euro"
     }
